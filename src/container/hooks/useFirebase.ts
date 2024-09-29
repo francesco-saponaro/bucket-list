@@ -5,7 +5,7 @@ import { getFirestore } from 'firebase/firestore';
 
 const useFirebase = () => {
     const firebaseConfig = {
-        apiKey: "AIzaSyDGx_CQaX0nYkbu2skpK5-aY3BpnqZkW9c",
+        apiKey: process.env.VITE_APP_FIREBASE,
         authDomain: "bucket-list-ede9a.firebaseapp.com",
         projectId: "bucket-list-ede9a",
         storageBucket: "bucket-list-ede9a.appspot.com",
