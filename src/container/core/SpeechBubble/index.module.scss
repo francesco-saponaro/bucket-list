@@ -1,0 +1,28 @@
+@import "@styles/index.module.scss";
+
+.speech_bubble {
+    position: relative;
+    background: $primary;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-bolder;
+    font-size: $min-font-size;
+    cursor: pointer;
+}
+
+.speech_bubble:after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $primary
+}

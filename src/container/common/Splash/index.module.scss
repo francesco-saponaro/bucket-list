@@ -1,0 +1,81 @@
+@import "@styles/index.module.scss";
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $primary;
+    opacity: 0;
+    transition: opacity .5s ease-in-out; // Ensure smooth transition
+    // animation: fadeIn 1s forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000032423432;
+    width: 100%;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 8px;
+            margin-left: 18px;
+        }
+
+        svg {
+            opacity: 0;
+        }
+
+        svg:nth-child(1) {
+            animation: svgFadeIn 0.5s forwards .5s;
+            transform-origin: bottom;
+            transform: rotate(-20deg);
+            margin-right: -29.5px;
+        }
+
+        svg:nth-child(2) {
+            animation: svgFadeIn 0.5s forwards .75s;
+            transform-origin: bottom;
+            transform: rotate(-20deg);
+        }
+
+        svg:nth-child(3) {
+            animation: svgFadeIn 0.5s forwards 1s;
+            transform-origin: bottom;
+            transform: rotate(-10deg);
+        }
+    }
+}
+
+@keyframes svgFadeIn {
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+// @keyframes fadeIn {
+//     to {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes fadeOut {
+//     to {
+//         opacity: 0;
+//     }
+// }
+
+// .loaded {
+//     opacity: 0 !important;
+//     transition: opacity 1s ease-in-out !important; // Ensure smooth transition
+// }

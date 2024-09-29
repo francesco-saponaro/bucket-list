@@ -1,0 +1,7 @@
+.recharts-loader {
+    .recharts-wrapper {
+        @media (max-height: 770px) {
+            height: 300px !important;
+        }
+    }
+}

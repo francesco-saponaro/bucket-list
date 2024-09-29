@@ -1,0 +1,23 @@
+@import "@styles/index.module.scss";
+
+.circle_button {
+    border-radius: 50%;
+    // background-color: "";
+    background-color: "";
+    opacity: 0.2;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.is_back {
+    transform: rotate(180deg);
+}
+
+.is_down {
+    transform: rotate(90deg);
+}

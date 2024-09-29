@@ -1,0 +1,47 @@
+@import '@styles/index.module.scss';
+
+.tabs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    border-radius: 8px;
+    gap: 12px;
+
+    .tabs {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 8px;
+        background-color: "";
+        border-radius: 8px;
+
+        .tab_button {
+            padding: 10px;
+            border-radius: 4px;
+            font-family: $font-family-bigger;
+            font-size: $min-font-size;
+            font-weight: $font-weight-bolder;
+            text-align: center;
+            width: 100%;
+
+            color: "";
+
+
+            &_active {
+                background-color: $primary;
+                color: "";
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+@import '@styles/index.module.scss';
+
+.tooltip_button_container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 8px;
+    max-height: 40px;
+
+    .tooltip_button {
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        background-color: $primary;
+        padding: 8px 12px;
+        color: "";
+        border: none;
+        border-radius: 8px;
+        font-size: $min-font-size;
+        font-weight: $font-weight-bolder;
+        line-height: 17px;
+    }
+
+    .tooltip_arrow {
+        position: absolute;
+        bottom: 2px;
+        /* Posizionamento della freccia sotto il pulsante */
+        left: 40%;
+        transform: rotate(45deg);
+        padding: 7px;
+        background-color: $primary;
+        border: none;
+        z-index: 0;
+
+    }
+
+}
+
+.shake {
+    animation: tilt-shaking 0.2s ease-in-out infinite;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

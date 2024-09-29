@@ -1,0 +1,105 @@
+@import '@styles/index.module.scss';
+
+.input_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .input_label {
+        font-size: 12px;
+        // margin-bottom: 5px;
+    }
+
+    .input_wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: white;
+
+        &:focus-within {
+            border: 2px solid black;
+        }
+
+        svg {
+            margin-right: 10px;
+            fill: gray;
+        }
+
+        .field {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: black;
+            font-size: 14px;
+
+            &::placeholder {
+                color: gray;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .eye {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+
+    .error {
+        color: red;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid red;
+
+        &:focus-within {
+            border: 2px solid red;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        svg {
+            path {
+                fill: red;
+            }
+        }
+    }
+
+    .error_text {
+        color: red;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        span {
+            font-size: 12px;
+        }
+
+        svg {
+            width: 14px;
+            height: 14px;
+
+            path {
+                fill: red;
+            }
+        }
+    }
+}
+
+.readOnly {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    * {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}

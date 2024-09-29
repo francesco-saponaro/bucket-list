@@ -1,0 +1,39 @@
+@import '@styles/index.module.scss';
+
+.loader_container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: fit-content;
+    // width: fit-content;
+    width: 100%;
+
+    .progress {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: "";
+        }
+    }
+
+    .loader_text {
+        font-family: $font-family-narrow;
+        color: "";
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 51.5%;
+        transform: translate(-50%, -50%);
+
+        @media (max-height: 770px) {
+            font-size: 60px;
+        }
+    }
+}

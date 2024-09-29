@@ -1,0 +1,58 @@
+@import "@styles/index.module.scss";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: "" !important;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 24px;
+    gap: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+
+    h1 {
+        margin: 0;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        width: 100%;
+    }
+
+    span {
+        margin: 0;
+        font-size: 14px;
+
+        &.min {
+            font-size: 12px;
+        }
+
+        &.link {
+            cursor: pointer;
+            font-size: 14px;
+            color: "";
+            font-weight: 600;
+        }
+    }
+}

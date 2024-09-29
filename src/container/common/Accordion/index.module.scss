@@ -1,0 +1,100 @@
+@import '@styles/index.module.scss';
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: "";
+    border-radius: 15px;
+    color: "" !important;
+    cursor: pointer;
+
+    h2,
+    p,
+    span {
+        color: "" !important;
+    }
+
+
+    summary {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h2 {
+            text-align: start;
+        }
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: "";
+        opacity: 0.2;
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        border-radius: 100px;
+        padding: 8px;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+
+        svg {
+            width: 18px;
+            height: 18px;
+
+            path {
+                fill: "";
+            }
+        }
+
+        &_open {
+            transform: rotate(-180deg);
+        }
+
+    }
+
+}
+
+
+.child {
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 4px;
+
+    h2 {
+        color: "" !important;
+        font-size: 14px;
+    }
+
+
+    .icon {
+        background: transparent;
+        opacity: 1;
+
+
+        svg {
+            path {
+
+                fill: "";
+            }
+        }
+
+    }
+
+}
+
+.divider {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 0.25px solid "";
+}

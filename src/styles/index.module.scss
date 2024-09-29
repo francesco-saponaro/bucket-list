@@ -1,0 +1,59 @@
+@import './modules/colors.scss';
+@import './modules/variables.scss';
+
+* {
+    border: none;
+    font-family: $font-family;
+    box-sizing: border-box;
+    font-synthesis: none !important;
+    letter-spacing: 0px;
+}
+
+.page {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+    background: #F6F6F6;
+
+    .page {
+        height: 100dvh;
+        width: 100dvw;
+        color: "";
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Intro Bold', 'inter', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: $title-font-size;
+    font-weight: $font-weight-bolder;
+}
+
+h2 {
+    font-size: $subtitle-font-size;
+    font-weight: $font-weight-bolder;
+}
+
+h3 {
+    font-size: $section-font-size;
+    font-weight: $font-weight-bolder;
+}
